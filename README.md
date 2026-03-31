@@ -105,3 +105,16 @@ Optional (recommended):
 ```bash
 git clone https://github.com/TangoCharlieYT/expression-challenge-app.git
 cd expression-challenge-app
+
+### 2️⃣ Setup Backend
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+
+Backend will start at:
+http://127.0.0.1:5000
+
+### 3️⃣ Run Application
+Open your browser and go to:
+http://127.0.0.1:5000
