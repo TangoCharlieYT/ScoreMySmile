@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(150deg, #f0f5ff, #e5f2ff);
+  color: #1b2a4c;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(35, 64, 128, 0.12);
+  padding: 18px;
+  margin-bottom: 16px;
+}
+
+#webcam-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#video {
+  width: min(100%, 420px);
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #9cc6ff;
+  background: #000;
+}
+
+.status {
+  margin-top: 10px;
+  color: #333;
+  font-weight: 600;
+}
+
+.target {
+  margin: 12px 0;
+  font-size: 1.2em;
+  color: #2450a5;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+#result-section.hidden {
+  display: none;
+}
+
+#player-name, #player-rating {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+#leaderboard-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#leaderboard-section li {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 6px;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-size: 0.98em;
+  font-weight: 600;
+}

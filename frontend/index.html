@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expression Challenge App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Expression Challenge App</h1>
+
+    <div id="webcam-section" class="card">
+      <video id="video" autoplay playsinline></video>
+      <canvas id="canvas" style="display:none;"></canvas>
+      <div class="status" id="camera-status">Camera is initializing...</div>
+    </div>
+
+    <div id="game-section" class="card">
+      <div id="instructions">Click Start to begin.</div>
+      <div class="target">Target emotion: <span id="target-emotion">-</span></div>
+      <div class="buttons">
+        <button id="start-btn">Start</button>
+        <button id="capture-btn" disabled>Capture</button>
+        <button id="retry-btn" disabled>Retry</button>
+      </div>
+      <div id="round-info"></div>
+      <div id="score-info"></div>
+      <div id="feedback"></div>
+    </div>
+
+    <div id="result-section" class="card hidden">
+      <h2>Final Score</h2>
+      <p id="final-score"></p>
+      <input id="player-name" placeholder="Enter your name" />
+      <div class="rating">
+        <label>Rating (1-5): </label>
+        <select id="player-rating">
+          <option value="">Select</option>
+          <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+        </select>
+      </div>
+      <button id="submit-rating-btn">Submit Rating</button>
+      <div id="rating-status"></div>
+    </div>
+
+    <div id="leaderboard-section" class="card">
+      <h2>Leaderboard</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
