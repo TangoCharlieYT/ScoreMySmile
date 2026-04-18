@@ -1,4 +1,4 @@
-# 🎭 Expression Challenge App
+# 🎭 Expression Challenge App - ScoreMySmile
 
 An AI-powered real-time facial expression game built as a **Bring Your Own Project (BYOP)** to explore practical applications of Computer Vision and Machine Learning.
 
@@ -103,8 +103,10 @@ Optional (recommended):
 
 ### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/TangoCharlieYT/expression-challenge-app.git
-cd expression-challenge-app
+https://github.com/TangoCharlieYT/ScoreMySmile.git
+cd ScoreMySmile
+
+---
 
 ### 2️⃣ Setup Backend
 ```bash
@@ -115,6 +117,10 @@ python app.py
 Backend will start at:
 http://127.0.0.1:5000
 
+---
+
 ### 3️⃣ Run Application
 Open your browser and go to:
 http://127.0.0.1:5000
+
+---
